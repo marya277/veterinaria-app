@@ -6,7 +6,7 @@ import Header from "./Header";
 import ListadoPacientes from "./ListadoPacientes";
 
 
-const seguimientoPacientes = () => {
+const SeguimientoPacientes = () => {
     const[pacientes, setPacientes] = useState(() => JSON.parse(localStorage.getItem('pacientes')) || []);
     const [paciente, setPaciente] = useState({});
   
@@ -31,4 +31,4 @@ const seguimientoPacientes = () => {
     );
 }
 
-export default seguimientoPacientes
+export default SeguimientoPacientes;
